@@ -4,12 +4,12 @@ from telethon import TelegramClient, events, functions, types, Button
 from datetime import timedelta
 import asyncio
 
-api_id = os.environ.get("APP_ID")
+api_id = os.environ.get("APP_ID", "9181844")
 import os, asyncio, re
 from os import system
 from telethon.tl.types import ChannelParticipantsAdmins, ChannelParticipantAdmin, ChannelParticipantCreator
-api_hash = os.environ.get("API_HASH")
-token = os.environ.get("BOT_TOKEN")
+api_hash = os.environ.get("API_HASH", "996a3e7194a4f07576fda5c20bb1138b")
+token = os.environ.get("BOT_TOKEN", "5915292741:AAEdSegOJ5-L6J02QR2HIP-il1gcSe9k8Rw")
 client = TelegramClient('LegendBoy', api_id, api_hash).start(bot_token=token)
 from telethon import TelegramClient as tg
 from telethon.tl.functions.channels import GetAdminedPublicChannelsRequest as pc, JoinChannelRequest as join, LeaveChannelRequest as leave, DeleteChannelRequest as dc
